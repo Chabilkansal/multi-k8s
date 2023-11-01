@@ -10,6 +10,6 @@ docker push chabil/multi-server:$SHA
 docker push chabil/multi-worker:$SHA
 
 kubectl apply -f k8s
-kuebctl set image deployments/server-deployment server=chabil/multi-server:$SHA
-kubectl set image deployments/client-deployment client=chabil/multi_client:$SHA
-kubectl set image deployments/worker-deployment worker=chabil/multi_worker:$SHA
+kubectl set image deployments/server-deployment server=chabil/multi-server:$SHA
+kubectl set image deployments/client-deployment client=chabil/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=chabil/multi-worker:$SHA
